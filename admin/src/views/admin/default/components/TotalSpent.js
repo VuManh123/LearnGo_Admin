@@ -23,7 +23,6 @@ import {
 export default function TotalSpent(props) {
   const { ...rest } = props;
 
-  // Chakra Color Mode
 
   const textColor = useColorModeValue("secondaryGray.900", "white");
   const textColorSecondary = useColorModeValue("secondaryGray.600", "white");
@@ -59,7 +58,7 @@ export default function TotalSpent(props) {
               color={textColorSecondary}
               me='4px'
             />
-            This month
+            Tháng này
           </Button>
           <Button
             ms='auto'
@@ -86,8 +85,8 @@ export default function TotalSpent(props) {
             textAlign='start'
             fontWeight='700'
             lineHeight='100%'>
-            $37.5K
-          </Text>
+            476
+          </Text><br/>
           <Flex align='center' mb='20px'>
             <Text
               color='secondaryGray.600'
@@ -95,21 +94,14 @@ export default function TotalSpent(props) {
               fontWeight='500'
               mt='4px'
               me='12px'>
-              Total Spent
+              Người dùng mới
             </Text>
             <Flex align='center'>
               <Icon as={RiArrowUpSFill} color='green.500' me='2px' mt='2px' />
               <Text color='green.500' fontSize='sm' fontWeight='700'>
-                +2.45%
+                +12%
               </Text>
             </Flex>
-          </Flex>
-
-          <Flex align='center'>
-            <Icon as={IoCheckmarkCircle} color='green.500' me='4px' />
-            <Text color='green.500' fontSize='md' fontWeight='700'>
-              On track
-            </Text>
           </Flex>
         </Flex>
         <Box minH='260px' minW='75%' mt='auto'>

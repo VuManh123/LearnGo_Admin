@@ -2,6 +2,7 @@
 
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 // Chakra imports
 import {
   Box,
@@ -22,7 +23,6 @@ import {
 import { HSeparator } from "components/separator/Separator";
 import DefaultAuth from "layouts/auth/Default";
 // Assets
-import { FcGoogle } from "react-icons/fc";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { RiEyeCloseLine } from "react-icons/ri";
 import { useNavigate } from 'react-router-dom';
@@ -30,9 +30,23 @@ import { useNavigate } from 'react-router-dom';
 function SignIn() {
   // Chakra color mode
   const navigate = useNavigate();
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
   const handleLogin = () => {
     // Chuyển hướng đến trang admin/default khi ấn nút login
-    navigate('/admin/default');
+    const requiredUsername = "admin";
+    const requiredPassword = "123456";
+
+    if (username !== requiredUsername || password !== requiredPassword) {
+      alert("Tên đăng nhập hoặc mật khẩu không chính xác!");
+    } else {
+      setError("");
+      alert("Đăng nhập thành công!");
+      // Xử lý logic đăng nhập hoặc điều hướng tại đây
+      navigate('/admin/default');
+    }
   };
 
   const textColor = useColorModeValue("navy.700", "white");
@@ -114,6 +128,7 @@ function SignIn() {
               mb='24px'
               fontWeight='500'
               size='lg'
+              onChange={(e) => setUsername(e.target.value)}
             />
             <FormLabel
               ms='4px'
@@ -132,6 +147,7 @@ function SignIn() {
                 size='lg'
                 type={show ? "text" : "password"}
                 variant='auth'
+                onChange={(e) => setPassword(e.target.value)}
               />
               <InputRightElement display='flex' alignItems='center' mt='4px'>
                 <Icon

@@ -1,6 +1,6 @@
 [
   {
-    "name":"Horizon UI PRO",
+    "name":"Peter",
     "status": "Approved",
     "date": "18 Apr 2022",
     "progress": 75.5  
@@ -13,7 +13,7 @@
   },
   {
     "name":"Marketplace",
-    "status": "Error",
+    "status": "Disable",
     "date": "20 May 2021",
     "progress": 90  
   },

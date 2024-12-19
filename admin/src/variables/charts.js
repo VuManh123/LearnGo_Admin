@@ -32,7 +32,7 @@ export const barChartOptionsDailyTraffic = {
     labels: {
       show: true,
       style: {
-        colors: "#A3AED0",
+        colors: "#0B6E4F",
         fontSize: "14px",
         fontWeight: "500",
       },
@@ -85,7 +85,7 @@ export const barChartOptionsDailyTraffic = {
           },
           {
             offset: 100,
-            color: "rgba(67, 24, 255, 1)",
+            color: "#CBD5E0",
             opacity: 0.28,
           },
         ],
@@ -107,16 +107,16 @@ export const barChartOptionsDailyTraffic = {
 
 export const barChartDataConsumption = [
   {
-    name: "PRODUCT A",
-    data: [400, 370, 330, 390, 320, 350, 360, 320, 380],
+    name: "TỪ VỰNG",
+    data: [22, 25, 23, 24, 22, 26, 21, 22, 21],
   },
   {
-    name: "PRODUCT B",
-    data: [400, 370, 330, 390, 320, 350, 360, 320, 380],
+    name: "CÂU",
+    data: [10, 12, 11, 12, 13, 10, 9, 11, 13],
   },
   {
-    name: "PRODUCT C",
-    data: [400, 370, 330, 390, 320, 350, 360, 320, 380],
+    name: "VIDEO",
+    data: [9, 11, 8, 7, 5, 8, 10, 12, 7],
   },
 ];
 
@@ -191,12 +191,12 @@ export const barChartOptionsConsumption = {
   },
   fill: {
     type: "solid",
-    colors: ["#5E37FF", "#6AD2FF", "#E1E9F8"],
+    colors: ["#0B6E4F", "#6AD2FF", "#E1E9F8"],
   },
   legend: {
     show: false,
   },
-  colors: ["#5E37FF", "#6AD2FF", "#E1E9F8"],
+  colors: ["#0B6E4F", "#6AD2FF", "#E1E9F8"],
   dataLabels: {
     enabled: false,
   },
@@ -210,7 +210,7 @@ export const barChartOptionsConsumption = {
 
 export const pieChartOptions = {
   labels: ["Your files", "System", "Empty"],
-  colors: ["#4318FF", "#6AD2FF", "#EFF4FB"],
+  colors: ["#0B6E4F", "#6AD2FF", "#EFF4FB"],
   chart: {
     width: "50px",
   },
@@ -239,7 +239,7 @@ export const pieChartOptions = {
     },
   },
   fill: {
-    colors: ["#4318FF", "#6AD2FF", "#EFF4FB"],
+    colors: ["#0B6E4F", "#6AD2FF", "#EFF4FB"],
   },
   tooltip: {
     enabled: true,
@@ -253,12 +253,12 @@ export const pieChartData = [63, 25, 12];
 
 export const lineChartDataTotalSpent = [
   {
-    name: "Revenue",
-    data: [50, 64, 48, 66, 49, 68],
+    name: "Người dùng Mới",
+    data: [74, 81, 72, 66, 70, 89],
   },
   {
-    name: "Profit",
-    data: [30, 40, 24, 46, 20, 46],
+    name: "Người dùng xoá tài khoản",
+    data: [20, 17, 15, 18, 20, 15],
   },
 ];
 
@@ -273,14 +273,14 @@ export const lineChartOptionsTotalSpent = {
       left: 0,
       blur: 10,
       opacity: 0.1,
-      color: "#4318FF",
+      color: "#0B6E4F",
     },
   },
-  colors: ["#4318FF", "#39B8FF"],
+  colors: ["#0B6E4F", "#39B8FF"],
   markers: {
     size: 0,
     colors: "white",
-    strokeColors: "#7551FF",
+    strokeColors: "green",
     strokeWidth: 3,
     strokeOpacity: 0.9,
     strokeDashArray: 0,
@@ -328,9 +328,9 @@ export const lineChartOptionsTotalSpent = {
   grid: {
     show: false,
     column: {
-      color: ["#7551FF", "#39B8FF"],
+      color: ["#0B6E4F", "#39B8FF"],
       opacity: 0.5,
     },
   },
-  color: ["#7551FF", "#39B8FF"],
+  color: ["#0B6E4F", "#39B8FF"],
 };

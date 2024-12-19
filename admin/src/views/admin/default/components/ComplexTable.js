@@ -2,6 +2,7 @@
 
 import {
   Box,
+  Button,
   Flex,
   Icon,
   Progress,
@@ -45,7 +46,7 @@ export default function ComplexTable(props) {
           fontSize={{ sm: '10px', lg: '12px' }}
           color="gray.400"
         >
-          NAME
+          Tên Người Dùng
         </Text>
       ),
       cell: (info) => (
@@ -65,7 +66,7 @@ export default function ComplexTable(props) {
           fontSize={{ sm: '10px', lg: '12px' }}
           color="gray.400"
         >
-          STATUS
+          Trạng thái
         </Text>
       ),
       cell: (info) => (
@@ -108,7 +109,7 @@ export default function ComplexTable(props) {
           fontSize={{ sm: '10px', lg: '12px' }}
           color="gray.400"
         >
-          DATE
+          Ngày tạo
         </Text>
       ),
       cell: (info) => (
@@ -126,18 +127,14 @@ export default function ComplexTable(props) {
           fontSize={{ sm: '10px', lg: '12px' }}
           color="gray.400"
         >
-          PROGRESS
+          Hành động
         </Text>
       ),
       cell: (info) => (
         <Flex align="center">
-          <Progress
-            variant="table"
-            colorScheme="brandScheme"
-            h="8px"
-            w="108px"
-            value={info.getValue()}
-          />
+          <Button colorScheme="red">
+            Delete
+          </Button>
         </Flex>
       ),
     }),
@@ -168,7 +165,7 @@ export default function ComplexTable(props) {
           fontWeight="700"
           lineHeight="100%"
         >
-          Complex Table
+          DANH SÁCH TÀI KHOẢN
         </Text>
         <Menu />
       </Flex>

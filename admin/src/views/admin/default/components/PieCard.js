@@ -35,7 +35,7 @@ export default function Conversion(props) {
           width='unset'
           fontWeight='700'>
           <option value='daily'>Daily</option>
-          <option value='monthly'>Monthly</option>
+          <option value='monthly'>Tháng này</option>
           <option value='yearly'>Yearly</option>
         </Select>
       </Flex>

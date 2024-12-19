@@ -17,17 +17,12 @@ import tableDataComplex from "views/admin/dataTables/variables/tableDataComplex.
 import React from "react";
 
 export default function Settings() {
-  // Chakra Color Mode
   return (
     <Box pt={{ base: "130px", md: "80px", xl: "80px" }}>
-      
-        
         <DevelopmentTable
           columnsData={columnsDataDevelopment}
           tableData={tableDataDevelopment}
         />
-        
-      
     </Box>
   );
 }
